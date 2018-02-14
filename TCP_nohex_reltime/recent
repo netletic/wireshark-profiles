@@ -1,0 +1,24 @@
+gui.toolbar_main_show: TRUE
+gui.filter_toolbar_show: TRUE
+gui.wireless_toolbar_show: FALSE
+gui.packet_list_show: TRUE
+gui.tree_view_show: TRUE
+gui.byte_view_show: TRUE
+gui.statusbar_show: TRUE
+gui.packet_list_colorize: FALSE
+gui.time_format: RELATIVE
+gui.time_precision: AUTO
+gui.seconds_format: SECONDS
+gui.zoom_level: 0
+gui.bytes_view: 0
+gui.geometry_main_upper_pane: 387
+gui.geometry_main_lower_pane: 319
+column.width: %m, 76:L, "%Cus:frame.time_delta", 114:L, %t, 83:L, "%Cus:tcp.time_delta", 25:L, %s, 122:L, %d, 122:L, %p, 25, %L, 44:L, %B, -1:L, "%Cus:tcp.seq", 59:L, "%Cus:tcp.nxtseq", 92:L, "%Cus:tcp.ack", 70:L, "%Cus:tcp.analysis.acks_frame", 51:L, "%Cus:tcp.window_size", 84:L, "%Cus:tcp.len", 66:L, "%Cus:tcp.analysis.bytes_in_flight", 84:L, "%Cus:ip.id", 122:L, %i, 451:L
+gui.conversation_tabs:
+	"TCP", "Ethernet",
+	"IPv4", "IPv6",
+	"UDP"
+gui.endpoint_tabs:
+gui.rlc_pdus_from_mac_frames: FALSE
+gui.additional_toolbar_show:
+gui.interface_toolbar_show:

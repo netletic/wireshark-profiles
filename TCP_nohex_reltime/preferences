@@ -1,0 +1,33 @@
+gui.recent_files_count.max: 30
+gui.recent_display_filter_entries.max: 30
+gui.column.hidden: %Cus:tcp.time_delta:0:R,%p
+gui.column.format:
+	"#", "%m",
+	"frame.delta_t", "%Cus:frame.time_delta:0:R",
+	"time", "%t",
+	"tcp.delta", "%Cus:tcp.time_delta:0:R",
+	"src", "%s",
+	"dst", "%d",
+	"prot", "%p",
+	"len", "%L",
+	"cumu.bytes", "%B",
+	"tcp.seq", "%Cus:tcp.seq:0:R",
+	"tcp.nxtseq", "%Cus:tcp.nxtseq:0:R",
+	"tcp.ack", "%Cus:tcp.ack:0:R",
+	"ack4", "%Cus:tcp.analysis.acks_frame:0:R",
+	"tcp.wsize", "%Cus:tcp.window_size:0:R",
+	"tcp.len", "%Cus:tcp.len:0:R",
+	"tcp.flight", "%Cus:tcp.analysis.bytes_in_flight:0:R",
+	"ip.id", "%Cus:ip.id:0:R",
+	"Info", "%i"
+gui.qt.font_name: Source Code Pro,10,-1,5,50,0,0,0,0,0
+gui.layout_content_3: NONE
+gui.filter_expressions.label: TAF
+gui.filter_expressions.enabled: TRUE
+gui.filter_expressions.expr: tcp.analysis.flags
+gui.filter_expressions.label: SYN
+gui.filter_expressions.enabled: TRUE
+gui.filter_expressions.expr: tcp.flags==02
+eth.check_fcs: FALSE
+tcp.desegment_tcp_streams: FALSE
+tcp.calculate_timestamps: TRUE
